@@ -2,7 +2,7 @@ const { request, response } = require('express');
 const express = require('express');
 const app = express();
 require('dotenv').config();
-const PORT =process.env.PORT || 8187;
+const PORT =process.env.PORT || 1414;
 //importing mongoose
 const mongoose = require('mongoose');
 //importing userController
@@ -10,7 +10,7 @@ const userController = require('./controllers/usercontroller')
 
 app.use(express.json());
 app.get('/',(request,response)=>{
-    response.status(200).json({message:'Hello welcome to Jeffery node_api'});
+    response.status(200).json({message:'H welcome to Kingsley node_api'});
 });
 
 app.post('/user',userController.adduser);
